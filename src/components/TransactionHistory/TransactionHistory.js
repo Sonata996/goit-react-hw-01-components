@@ -1,8 +1,8 @@
 import React from 'react';
-import { RenderTypeHistori } from './RenderHistoriElem';
 import { SectionHistori, TablrHistori,TheadTr } from './historiTran.styled';
+import { TdElem } from './historiTran.styled';
 
-export const RenderTransacHistory = () =>{
+export const RenderTransacHistory = (prop) =>{
     return <TablrHistori>
   <thead>
     <TheadTr>
@@ -13,7 +13,15 @@ export const RenderTransacHistory = () =>{
   </thead>
 
   <tbody>
-    <RenderTypeHistori />
+    {
+      prop.transac.map(elem => 
+        <TheadTr key={elem.id}>
+          <TdElem>{elem.type}</TdElem>
+          <TdElem>{elem.amount}</TdElem>
+          <TdElem>{elem.currency}</TdElem>
+        </TheadTr>
+        )
+    }
     </tbody>
 </TablrHistori>
 }

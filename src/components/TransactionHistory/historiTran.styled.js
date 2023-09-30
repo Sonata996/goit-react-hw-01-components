@@ -10,11 +10,11 @@ display: flex;
 align-items: center;
 flex-direction: column;
 `
-export const TheadTr = styled.thead`
+export const TheadTr = styled.tr`
 display: flex;
 gap: 20px
 `
-export const SectionHistori = styled.td`
+export const SectionHistori = styled.th`
 background-color: #379cb5;
 `
 export const TdElem = styled.td`
