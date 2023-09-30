@@ -1,5 +1,4 @@
 import React from 'react';
-// import ReactDOM from 'react-dom/client';
 import { ContainerProfil, ProfilInfo, AvatarProfil,UserName,UserTag,UserLocation,ListActive,ListElem} from './profile.styled';
 
 export const Profile = (prop) => {

@@ -1,7 +1,5 @@
 import React from 'react';
-// import ReactDOM from 'react-dom/client';
 import { ContainerFriends,ListFriends,AvatarFriend,DivActivity,ListFriendElem } from './friends.styled';
-// import friends from './friends.json'
 
 export const RenderFriends = (prop) => {
     return (

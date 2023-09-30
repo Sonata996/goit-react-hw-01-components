@@ -1,6 +1,5 @@
 import React from 'react';
-import { SectionHistori, TablrHistori,TheadTr } from './historiTran.styled';
-import { TdElem } from './historiTran.styled';
+import { SectionHistori, TablrHistori,TheadTr,TdElem  } from './historiTran.styled';
 
 export const RenderTransacHistory = (prop) =>{
     return <TablrHistori>

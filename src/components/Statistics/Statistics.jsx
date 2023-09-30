@@ -1,11 +1,9 @@
 import React from 'react';
-// import ReactDOM from 'react-dom/client';
-// import { RenderLIElem } from './StatisticElem';
 import { ComteinerStatistics, ListElemStat,ListActiveStat } from './statistics.styled';
 
 export const Statistics = (prop) => {
     return (<ComteinerStatistics>
-      {prop.title ? `<h2>Upload stats</h2>` : ''}
+      {prop.title ? <h2>Upload stats</h2> : ''}
   <ListActiveStat>
   {prop.stat.map(elem => (
     <ListElemStat key={elem.id} id={elem.id}>
