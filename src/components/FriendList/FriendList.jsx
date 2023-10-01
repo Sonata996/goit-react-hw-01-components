@@ -1,16 +1,11 @@
 import React from 'react';
-import { ContainerFriends,ListFriends,AvatarFriend,DivActivity,ListFriendElem } from './friends.styled';
-
+import { ContainerFriends,ListFriends} from './friends.styled';
+import { FriendListItem } from './FriendListItem/FriendListItem';
 export const RenderFriends = (prop) => {
     return (
     <ContainerFriends>
       <ListFriends>
-        {prop.frien.map(elem => <ListFriendElem key={elem.id} id={elem.id}>
-          <DivActivity active={elem}></DivActivity>
-          <AvatarFriend src={elem.avatar} alt="" />
-        <div>{elem.name}</div>
-      </ListFriendElem>
-)}
+         <FriendListItem elem={prop}/>
       </ListFriends>
   </ContainerFriends>)
 }
