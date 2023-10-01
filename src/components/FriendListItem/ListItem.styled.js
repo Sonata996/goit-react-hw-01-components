@@ -9,7 +9,7 @@ border-radius:50%;
 width:18px;
 height:18px;
 background-color:${(prop) =>{ 
-    if (prop.active) {
+    if (prop.active === 'true') {
     return 'green'
 }else{
     return 'red'
